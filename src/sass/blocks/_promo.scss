@@ -1,0 +1,94 @@
+.promo {
+  padding: 55px 0 265px 0;
+  min-height: 901px;
+  width: 100%;
+  background: url("../img/tZeezotje_BG.jpg");
+
+  &__header {
+    display: flex;
+    align-items: center;
+    &-logo {
+      width: 269px;
+      height: 55px;
+      img {
+        width: 100%;
+      }
+    }
+    &-menu {
+      margin-left: 85px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      &-items {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+        color: rgba(255, 255, 255, 1);
+      }
+      &-item {
+        margin-left: 45px;
+        padding: 0;
+      }
+    }
+    &-tel {
+      margin-left: 157px;
+      img {
+        margin-right: 11px;
+      }
+      a {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+      }
+    }
+  }
+  &__subtittle {
+    margin-top: 154px;
+    width: 366px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    letter-spacing: 0.06em;
+  }
+  &__tittle {
+    margin-top: 24px;
+    width: 1168px;
+    height: 176px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;
+    color: #ffffff;
+  }
+  &__contacts {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    width: 270px;
+    height: 100px;
+    background: #3a4574;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    border: none;
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+  }
+  &__social {
+    margin-left: 25px;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 47px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

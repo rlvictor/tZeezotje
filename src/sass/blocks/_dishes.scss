@@ -1,0 +1,47 @@
+.dishes {
+  padding: 109px 0 50px 0;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__text {
+    width: 470px;
+  }
+  &__tittle {
+    width: 470px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 88px;
+    color: #000000;
+  }
+  hr {
+    margin: 4px 0 16px 0;
+    width: 108px;
+    height: 2px;
+    border: none;
+    color: #d3b47f;
+    opacity: 1;
+    background-color: #d3b47f;
+    position: relative;
+    left: -54px;
+  }
+  &__divider {
+    display: block;
+    width: 108px;
+    height: 0px;
+    border: 2px solid #d3b47f;
+  }
+  &__descr {
+    width: 470px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #808080;
+  }
+  &__image {
+    width: 670px;
+    height: 560px;
+  }
+}

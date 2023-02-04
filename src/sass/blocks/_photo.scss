@@ -1,0 +1,65 @@
+.photo {
+  // height: 605px;
+  padding-top: 68px;
+  background: linear-gradient(#3a4574 70%, transparent 30%);
+  position: relative;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-right {
+      width: 170px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__tittle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 88px;
+    color: #ffffff;
+  }
+  &__descr {
+    width: 569px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  .swiper {
+    margin-top: 50px;
+  }
+
+  .swiper-slide {
+    width: 970px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-prev {
+    background-image: url(../icons/arrow-left.png);
+    width: 70px;
+    height: 70px;
+    position: relative;
+  }
+  .swiper-button-prev.swiper-button-disabled {
+    background-image: url(../icons/arrow-leftOpacity.png);
+    width: 70px;
+    height: 70px;
+    position: relative;
+  }
+  .swiper-button-next {
+    background-image: url(../icons/arrow-right.png);
+    width: 70px;
+    height: 70px;
+    position: relative;
+  }
+  .swiper-button-next.swiper-button-disabled {
+    background-image: url(../icons/arrow-rightOpacity.png);
+    width: 70px;
+    height: 70px;
+    position: relative;
+  }
+}

@@ -1,0 +1,62 @@
+.carousel {
+  padding: 220px 0;
+  height: 782px;
+  background-color: #3a4574;
+  &__image {
+    display: block;
+    margin: 0 auto;
+    width: 83px;
+  }
+  &__tittle {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 785px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: #d3b47f;
+  }
+  &__descr {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 785px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__subtittle {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.245em;
+    color: #d3b47f;
+  }
+  .swiper {
+    position: relative;
+  }
+  .swiper-button-prev {
+    background-image: url(../icons/arrow-left.png);
+    width: 70px;
+    height: 70px;
+  }
+  .swiper-button-prev.swiper-button-disabled {
+    background-image: url(../icons/arrow-leftOpacity.png);
+    width: 70px;
+    height: 70px;
+  }
+  .swiper-button-next {
+    background-image: url(../icons/arrow-right.png);
+    width: 70px;
+    height: 70px;
+  }
+  .swiper-button-next.swiper-button-disabled {
+    background-image: url(../icons/arrow-rightOpacity.png);
+    width: 70px;
+    height: 70px;
+  }
+}
