@@ -15,9 +15,53 @@
   padding: 0;
 }
 
+.btn {
+  width: 270px;
+  height: 100px;
+  background: #3a4574;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  border: none;
+  transition: all 0.6s;
+  &:hover {
+    box-shadow: 0 0 30px rgba(71, 71, 71, 0.701);
+    transform: scale(1.02);
+    transition: all 0.6s;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  margin-left: 25px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 47px;
+  text-align: center;
+  transition: all 0.6s;
+  cursor: pointer;
+  &:hover {
+    background-color: #a7aabba3;
+    transition: all 0.6s;
+  }
+}
+.black {
+  display: none;
+}
+
 @import "blocks/promo";
 @import "blocks/special";
 @import "blocks/carousel";
 @import "blocks/dishes";
 @import "blocks/photo";
 @import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/media";

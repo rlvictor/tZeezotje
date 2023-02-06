@@ -7,6 +7,9 @@
   &__header {
     display: flex;
     align-items: center;
+    &__hamburger {
+      display: none;
+    }
     &-logo {
       width: 269px;
       height: 55px;
@@ -24,11 +27,19 @@
         margin: 0;
         display: flex;
         list-style-type: none;
-        color: rgba(255, 255, 255, 1);
       }
       &-item {
         margin-left: 45px;
         padding: 0;
+        transition: all 0.6s;
+        &:hover {
+          transition: all 0.6s;
+          transform: scale(1.2);
+        }
+        a {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 1);
+        }
       }
     }
     &-tel {
@@ -75,20 +86,15 @@
     color: #ffffff;
     border: none;
   }
-  &__socials {
-    display: flex;
-    align-items: center;
-  }
+
   &__social {
-    margin-left: 25px;
-    width: 48px;
-    height: 48px;
     border: 2px solid #fff;
-    border-radius: 50%;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 47px;
-    text-align: center;
     color: #ffffff;
+  }
+  &__img {
+    display: none;
+    img {
+      width: 100%;
+    }
   }
 }

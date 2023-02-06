@@ -9,17 +9,48 @@
   </head>
   <body>
     <section class="promo">
+      <nav>
+        <ul class="mini__menu">
+          <li class="mini__menu-list"><a href="#Àlacarte">À la carte</a></li>
+          <li class="mini__menu-list"><a href="#Wijnkaart">Wijnkaart</a></li>
+          <li class="mini__menu-list"><a href="#Lunchmenu">Lunchmenu</a></li>
+          <li class="mini__menu-list"><a href="#Contact">Contact</a></li>
+
+          <a href="tel:+3292825725"
+            ><img src="icons/call-calling.svg" alt="calling" />+32 9 282 57
+            25</a
+          >
+          <div class="socials">
+            <div class="promo__social social socials-mini">Fb</div>
+            <div class="promo__social social socials-mini">Ig</div>
+            <div class="promo__social social socials-mini">Tw</div>
+            <div class="promo__social social socials-mini">Yt</div>
+          </div>
+        </ul>
+      </nav>
+
       <div class="container">
         <header class="promo__header">
-          <div class="promo__header-logo">
-            <img src="img/main_logo.png" alt="main logo" />
+          <div class="promo__header-logo white">
+            <a href="#"><img src="img/main_logo.png" alt="main logo" /></a>
+          </div>
+          <div class="promo__header-logo black">
+            <a href="#"><img src="img/logo_bottom.png" alt="main logo" /></a>
           </div>
           <nav class="promo__header-menu">
             <ul class="promo__header-menu-items">
-              <li class="promo__header-menu-item">À la carte</li>
-              <li class="promo__header-menu-item">Wijnkaart</li>
-              <li class="promo__header-menu-item">Lunchmenu</li>
-              <li class="promo__header-menu-item">Contact</li>
+              <li class="promo__header-menu-item">
+                <a href="#Àlacarte">À la carte</a>
+              </li>
+              <li class="promo__header-menu-item">
+                <a href="#Wijnkaart">Wijnkaart</a>
+              </li>
+              <li class="promo__header-menu-item">
+                <a href="#Lunchmenu">Lunchmenu</a>
+              </li>
+              <li class="promo__header-menu-item">
+                <a href="#Contact">Contact</a>
+              </li>
             </ul>
           </nav>
           <div class="promo__header-tel">
@@ -28,23 +59,31 @@
               25</a
             >
           </div>
+          <div class="promo__header-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </header>
         <div class="promo__subtittle">OPEN EVERYDAY 6AM - 9PM</div>
         <h1 class="promo__tittle">
           A bad day with lunch is better than a good day without it.
         </h1>
         <div class="promo__contacts">
-          <button class="promo__button">Reserve a table</button>
-          <div class="promo__socials">
-            <div class="promo__social">Fb</div>
-            <div class="promo__social">Ig</div>
-            <div class="promo__social">Tw</div>
-            <div class="promo__social">Yt</div>
+          <button class="promo__button btn">Reserve a table</button>
+          <div class="promo__socials socials">
+            <div class="promo__social social">Fb</div>
+            <div class="promo__social social">Ig</div>
+            <div class="promo__social social">Tw</div>
+            <div class="promo__social social">Yt</div>
           </div>
+        </div>
+        <div class="promo__img">
+          <img src="img/tZeezotjeBG_light.jpg" alt="promo" />
         </div>
       </div>
     </section>
-    <section class="special">
+    <section id="Àlacarte" class="special">
       <div class="container">
         <div class="special__wrapper">
           <ul class="special__dates">
@@ -107,7 +146,7 @@
         </div>
       </div>
     </section>
-    <section class="carousel">
+    <section id="Wijnkaart" class="carousel">
       <div class="container">
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -161,7 +200,7 @@
         </div>
       </div>
     </section>
-    <section class="dishes">
+    <section id="Lunchmenu" class="dishes">
       <div class="container">
         <div class="dishes__item">
           <div class="dishes__text">
@@ -233,49 +272,159 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section id="Contact" class="contacts">
       <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__info">
             <div class="contacts__tittle">Contacts</div>
             <div class="contacts__item">
-              <div class="contacts__icon">
-                <img src="icons/call-calling.svg" alt="icon" />
+              <div class="contacts__icon-wrapper">
+                <div class="contacts__icon">
+                  <img src="icons/call-callingContacts.svg" alt="icon" />
+                </div>
               </div>
-              <div class="contacts__item-tittle">Phone Number</div>
-              <div class="contacts__item-descr">
-                <a href="tel: +3292825725"></a>+32 9 282 57 25
+
+              <div class="contacts__item-block">
+                <div class="contacts__item-tittle">Phone Number</div>
+                <div class="contacts__item-descr">
+                  <a href="tel:+3292825725">+32 9 282 57 25</a>
+                </div>
               </div>
             </div>
             <div class="contacts__item">
-              <div class="contacts__icon">
-                <img src="icons/email.svg" alt="icon" />
+              <div class="contacts__icon-wrapper">
+                <div class="contacts__icon">
+                  <img src="icons/email.svg" alt="icon" />
+                </div>
               </div>
-              <div class="contacts__item-tittle">Email</div>
-              <div class="contacts__item-descr">info@email.com</div>
+
+              <div class="contacts__item-block">
+                <div class="contacts__item-tittle">Email</div>
+                <div class="contacts__item-descr">info@email.com</div>
+              </div>
             </div>
             <div class="contacts__item">
-              <div class="contacts__icon">
-                <img src="icons/clock.svg" alt="icon" />
+              <div class="contacts__icon-wrapper">
+                <div class="contacts__icon">
+                  <img src="icons/clock.svg" alt="icon" />
+                </div>
               </div>
-              <div class="contacts__item-tittle">Opening Hours</div>
-              <div class="contacts__item-descr">Everyday from 6 AM - 9 PM</div>
+
+              <div class="contacts__item-block">
+                <div class="contacts__item-tittle">Opening Hours</div>
+                <div class="contacts__item-descr">
+                  Everyday from 6 AM - 9 PM
+                </div>
+              </div>
             </div>
             <div class="contacts__item">
-              <div class="contacts__icon">
-                <img src="icons/map.svg" alt="icon" />
+              <div class="contacts__icon-wrapper">
+                <div class="contacts__icon">
+                  <img src="icons/map.svg" alt="icon" />
+                </div>
               </div>
-              <div class="contacts__item-tittle">Map Street</div>
-              <div class="contacts__item-descr">Jl. Raya Surabaya 2787</div>
+
+              <div class="contacts__item-block">
+                <div class="contacts__item-tittle">Map Street</div>
+                <div class="contacts__item-descr">Jl. Raya Surabaya 2787</div>
+              </div>
             </div>
           </div>
-          <div class="contacts__form">
-            <div class="contacts__form-tittle">have any questions?</div>
-            <form action="#"></form>
+          <div class="contacts__right-block">
+            <div class="contacts__right-block-tittle">have any questions?</div>
+            <form action="#" class="contacts__form">
+              <div class="contacts__inputs">
+                <div class="contacts__input">
+                  <label for="name">Name</label>
+                  <input
+                    name="name"
+                    type="text"
+                    id="name"
+                    placeholder="Input your name"
+                  />
+                </div>
+                <div class="contacts__input">
+                  <label for="email">Email</label>
+                  <input
+                    name="email"
+                    type="email"
+                    id="email"
+                    placeholder="Input your email"
+                  />
+                </div>
+              </div>
+
+              <div class="contacts__textarea">
+                <label for="text">Speciale Request</label>
+                <textarea
+                  name="text"
+                  id="text"
+                  placeholder="Input your special request"
+                ></textarea>
+              </div>
+              <button class="contacts__button btn">Send</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d341036.3427112612!2d3.7898586874208635!3d50.927263226746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37488761ca38f%3A0x5ac0cce1744acba!2zOTgyMCBNZXJlbGJla2UsINCR0LXQu9GM0LPQuNGP!5e0!3m2!1sru!2sru!4v1675609879047!5m2!1sru!2sru"
+            width="100%"
+            height="547"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="footer__block">
+          <div class="footer__logo">
+            <a href="#"><img src="img/logo_bottom.png" alt="logo" /></a>
+          </div>
+          <div class="footer__socials socials">
+            <div class="footer__social social">Fb</div>
+            <div class="footer__social social">Ig</div>
+            <div class="footer__social social">Tw</div>
+            <div class="footer__social social">Yt</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="overlay">
+      <div class="modal">
+        <div class="modal__close">&times;</div>
+        <div class="modal__tittle">Fill out the form</div>
+        <div class="modal__subtittle">we will answer you</div>
+        <form class="feed-form" action="#">
+          <input name="name" placeholder="Name" type="text" id="name" />
+          <input name="phone" id="phone" placeholder="Phone" />
+          <input name="email" id="email" placeholder="E-mail" type="email" />
+          <textarea
+            name="textarea"
+            id="text"
+            placeholder="Write something"
+            type="text"
+            style="resize: none"
+          ></textarea>
+          <button class="button">Send</button>
+        </form>
+      </div>
+
+      <div class="modal__feed">
+        <div class="modal__close">&times;</div>
+        <div class="modal__tittle">Thanks!</div>
+        <div class="modal__subtittle">
+          We will reply to you as soon as possible
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>

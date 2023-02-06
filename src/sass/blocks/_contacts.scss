@@ -1,0 +1,220 @@
+.contacts {
+  padding: 101px 0 50px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    margin-right: 96px;
+  }
+  &__tittle {
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 88px;
+    color: #000000;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    &-block {
+      display: flex;
+      flex-direction: column;
+    }
+    &-tittle {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: #2e2e2e;
+    }
+    &-descr {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: #2e2e2e;
+      a {
+        text-decoration: none;
+        color: #2e2e2e;
+      }
+    }
+  }
+  &__icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background-color: #d3b47f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+  }
+  &__right-block {
+    width: 670px;
+    &-tittle {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 88px;
+      color: #000000;
+    }
+  }
+  &__inputs {
+    display: flex;
+  }
+  &__input {
+    margin-right: 19px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    input {
+      margin-top: 10px;
+      padding: 28px 16px;
+      width: 320px;
+      height: 80px;
+      border: 1px solid #cccccc;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #808080;
+    }
+  }
+  &__textarea {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    textarea {
+      margin-top: 10px;
+      padding: 28px 16px;
+      resize: none;
+      border: 1px solid #cccccc;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #808080;
+    }
+  }
+  &__button {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  z-index: 10;
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 382px;
+    min-height: 402px;
+    background: #413131;
+    padding: 38px 40px 40px 40px;
+    // border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgb(44, 33, 33);
+    // transition: all 0.6s;
+    &__close {
+      position: absolute;
+      top: 0;
+      right: -50px;
+      font-size: 50px;
+      line-height: 21px;
+      color: #bdbaba;
+      cursor: pointer;
+      text-shadow: 2px 1px 3px black;
+    }
+    &__tittle {
+      font-weight: 700;
+      font-size: 21px;
+      text-align: center;
+      color: #e1e1e1;
+      text-shadow: 0px 0px 5px black;
+    }
+    &__subtittle {
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      color: #e1e1e1;
+    }
+    .feed-form {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      input {
+        height: 50px;
+        border-radius: 5px;
+        background: #fff;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 20px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #4b4b4b;
+      }
+      .button {
+        width: 300px;
+        height: 50px;
+        cursor: pointer;
+        background-color: #3a4574;
+        color: #fff;
+
+        font-weight: bold;
+        line-height: 27px;
+        border-radius: 5px;
+        border: 2px solid black;
+        &:hover {
+          background-color: #000828;
+        }
+      }
+    }
+    label.error {
+      font-family: "SeoulHangang";
+      font-size: 16px;
+      margin: 0 auto 15px auto;
+      color: #fff;
+    }
+    textarea {
+      margin: 0 auto 15px auto;
+      padding: 10px;
+      width: 300px;
+      height: 50px;
+      border-radius: 5px;
+      font-weight: 300;
+      font-size: 14px;
+    }
+    &__feed {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 382px;
+      min-height: 200px;
+      background: #413131;
+      padding: 38px 40px 40px 40px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 40px rgb(44, 33, 33);
+      .modal__subtittle {
+        margin-top: 30px;
+      }
+    }
+  }
+}
