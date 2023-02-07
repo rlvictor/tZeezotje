@@ -3,13 +3,16 @@
   min-height: 901px;
   width: 100%;
   background: url("../img/tZeezotje_BG.jpg");
-
+  .mini__menu {
+    display: none;
+  }
   &__header {
     display: flex;
     align-items: center;
     &__hamburger {
       display: none;
     }
+
     &-logo {
       width: 269px;
       height: 55px;
